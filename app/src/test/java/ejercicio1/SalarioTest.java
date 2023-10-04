@@ -28,18 +28,4 @@ public class SalarioTest {
         Assertions.assertThrows(IllegalArgumentException.class, () ->
                 calculadorDescuento.calcularDescuento(salario));
     }
-    // @ParameterizedTest
-    // @CsvSource({
-    //     "1000, 1000.0",
-    //     "3000, 2850.0",
-    //     "5000, 4750.0",
-    //     "0, 0.0"
-    // })
-    
-    // public void verifyNextDay(int s, int descuentoS) {
-    //     Salario salario = new Salario();
-    //     Double actualSalario = salario.calcularDescuento(s);
-    //     Assertions.assertEquals(descuentoS, actualSalario, "El salario no es válido");
-    // }
-    
 }

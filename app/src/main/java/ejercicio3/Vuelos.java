@@ -1,17 +1,9 @@
-package ejercicio2;
+package ejercicio3;
 
 public class Vuelos {
     private ServiceVuelos serviceVuelos;
 
-    public Vuelos(){
-        serviceVuelos = new ServiceVuelos();
-    }
-    
     public Vuelos(ServiceVuelos serviceVuelos) {
-        this.serviceVuelos = serviceVuelos;
-    }
-
-    public void setServiceVuelos(ServiceVuelos serviceVuelos){
         this.serviceVuelos = serviceVuelos;
     }
 

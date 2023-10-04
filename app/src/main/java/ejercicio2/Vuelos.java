@@ -6,7 +6,7 @@ public class Vuelos {
     public Vuelos(){
         serviceVuelos = new ServiceVuelos();
     }
-    
+
     public Vuelos(ServiceVuelos serviceVuelos) {
         this.serviceVuelos = serviceVuelos;
     }
@@ -26,4 +26,5 @@ public class Vuelos {
             return String.format("no existen suficientes pasajes para %s", destino);
         }
     }
+
 }

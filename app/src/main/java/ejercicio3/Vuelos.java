@@ -3,7 +3,15 @@ package ejercicio3;
 public class Vuelos {
     private ServiceVuelos serviceVuelos;
 
+    public Vuelos(){
+        serviceVuelos = new ServiceVuelos();
+    }
+
     public Vuelos(ServiceVuelos serviceVuelos) {
+        this.serviceVuelos = serviceVuelos;
+    }
+
+    public void setServiceVuelos(ServiceVuelos serviceVuelos){
         this.serviceVuelos = serviceVuelos;
     }
 
@@ -18,4 +26,5 @@ public class Vuelos {
             return String.format("no existen suficientes pasajes para %s", destino);
         }
     }
+
 }
